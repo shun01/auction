@@ -1,12 +1,17 @@
 Rails.application.routes.draw do
-  # resources :items
-  get '/items' => 'items#index'
-  post '/items' => 'items#create'
-  get '/items/new' => 'items#new'
-  get '/items/:id/edit' => 'items#edit'
-  get '/items/:id' => 'items#show'
-  patch 'items/:id' => 'items#update'
-  delete '/items/:id' => 'items#destroy'
+  resources :items
+
+
+  # get '/items' => 'items#index'
+  # post '/items' => 'items#create'
+  # get '/items/new' => 'items#new'
+  # get '/items/:id/edit' => 'items#edit'
+  # get '/items/:id' => 'items#show'
+  # patch 'items/:id' => 'items#update'
+  # delete '/items/:id' => 'items#destroy'
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
